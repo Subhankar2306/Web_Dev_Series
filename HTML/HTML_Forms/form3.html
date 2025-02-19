@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2>Event Regestration</h2>
+  <form >
+
+    <label for="name">Enter your Name:</label>
+    <input type="text" id="name" name="Name">
+
+    <br>
+    <br>
+    <label for="email">Enter your Email:</label>
+    <input type="email" id="email" name="Email">
+
+    <br>
+    <br>
+    <label for="phone">Enter your Phone No.:</label>
+    <input type="tel" id="phone" name="Phone">
+
+    <br>
+    <br>
+    <label for="ocupationType">Select Ocupation:</label>
+    <select name="Ocupation" id="ocupationType">
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+      <option value="other">Other</option>
+    </select>
+
+    <fieldset>
+      <legend>Topic of interest</legend>
+      <label for="checkbox1">HTML</label>
+      <input type="checkbox" name="checkbox" id="checkbox1">
+      <label for="checkbox2">CSS</label>
+      <input type="checkbox" name="checkbox" id="checkbox2">
+      <label for="checkbox3">Javascript</label>
+      <input type="checkbox" name="checkbox" id="checkbox3">
+      <label for="checkbox4">MERN Stack</label>
+      <input type="checkbox" name="checkbox" id="checkbox4">
+    </fieldset>
+
+    <label for="experience">Experience(in year):</label>
+    <input type="number" name="Experience" id="experience" min="0" max="50">
+    <br><br>
+    <label for="resume">Uplode your Resume</label>
+    <input type="file" name="Uplodefile" id="resume">
+    <br><br>
+
+    <fieldset>
+      <legend>Availability</legend>
+
+      <label for="radio1">Full-time</label>
+      <input type="radio" name="Radio" id="radio1">
+      <br>
+      <label for="radio2">Part-time</label>
+      <input type="radio" name="Radio" id="radio2">
+      <br>
+
+    </fieldset>
+    <label for="comment">Leave a comment:</label><br>
+    <textarea name="textArea" id="comment" rows="10" cols="100"></textarea>
+
+    <input type="button" value="Submit">
+  </form>
+</body>
+</html>
