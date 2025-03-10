@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      background-color: antiquewhite;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 500px;
+      justify-content: start;
+      align-items: start;
+      align-content: center; /* It is use for spacing between flex items */
+
+    }
+    .box{
+      border: 2px solid black;
+      height: 100px;
+      width: 100px;
+      margin: 5px;
+      padding: 5px;
+    }
+    #box1{
+      background-color: aqua;
+      order: 500;
+    }
+    #box2{
+      background-color:orange;
+     
+    }
+    #box3{
+      background-color:navajowhite;
+      
+    }
+    #box4{
+      background-color: rgb(66, 105, 105);
+     order: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="box1">Box 1</div>
+    <div class="box" id="box2">Box 2</div>
+    <div class="box" id="box3">Box 3</div>
+    <div class="box" id="box4">Box 4</div>
+  </div>
+</body>
+</html>
