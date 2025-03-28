@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      border: 2px solid black;
+      height: 400px;
+      width: 600px;
+      background-color: antiquewhite;
+      display: flex;
+      margin: 10px;
+      padding: 2px;
+    }
+    #box1{
+      background-color: aqua;
+      border: 1px solid black;
+      width: 47%;
+      margin: 3px;
+      padding: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+    #box2{
+      background-color: yellow;
+      border: 1px solid black;
+      width: 47%;
+      margin: 3px;
+      padding: 2px;
+    }
+    p{
+      border: 1px solid black;
+    }
+    img{
+      width: 270px;
+    }
+    @media (max-width:640px){
+      .container{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="box1">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eos, sed quam autem molestiae itaque in ipsam ea neque labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut a sit aliquid ipsum doloremque omnis sequi rem laudantium digni.</p>
+    </div>
+    <div id="box2">
+      <img src="css poster.jpeg" alt="">
+    </div>
+  </div>
+</body>
+</html>
