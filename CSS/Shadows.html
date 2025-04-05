@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Shadows</title>
+  <style>
+    .text-shadow-example {
+      font-size: 24px;
+      color: black;
+      text-shadow: 2px 2px 5px gray;
+    }
+
+    .box-shadow-example {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>Understanding Shadows in CSS</h1>
+  <section>
+    <h2>1. Text Shadows</h2>
+    <p class="text-shadow-example">This is an example of text-shadow in CSS.</p>
+    <p>The <code>text-shadow</code> property adds shadow to text. It takes values for horizontal offset, vertical offset, blur radius, and color.</p>
+  </section>
+  <section>
+    <h2>2. Box Shadows</h2>
+    <div class="box-shadow-example"></div>
+    <p>The <code>box-shadow</code> property adds shadow to elements like divs. It takes values for horizontal offset, vertical offset, blur radius, spread radius, and color.</p>
+  </section>
+</body>
+</html>

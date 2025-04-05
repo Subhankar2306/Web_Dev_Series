@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Shaadow</title>
+  <style>
+    .container{
+      background-color: beige;
+      height: 650px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box{
+      background-color: aquamarine;
+      width: 350px;
+      height: 350px;
+      border: 2px solid black; 
+      margin: 5px;
+      padding: 10px;
+      /* box-shadow: 5px 5px red; */ /* This is a simple shadow */
+      /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */ /* This is a shadow with color and opacity */
+      /* box-shadow: inset 10px 15px brown;*/ /* This is an inset shadow  ,it means inside shadow */
+      /* box-shadow: 5px 5px 10px blue; */
+      /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5); */
+      border-radius: 10px;
+      text-align: center;
+
+    }
+    #head1{
+      color: black;
+      text-shadow: 2px 2px 5px gray; /* This is a simple text shadow */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="box">
+      <img src="css poster.jpeg" alt=" CSS image">
+      <h2 id="head1">Box Shadow Example</h2>
+      <p>This is an example of a box shadow, Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo harum veritatis expedita dignissimos voluptate. Et placeat ab nulla ullam eligendi? Est eligendi dicta delectus itaque maiores rerum dolore nam facilis.</p>
+    </div>
+  </div>
+</body>
+</html>
