@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation in CSS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .containr {
+      background-color: beige;
+      height: 100vh;
+      width: 100vw;
+      border: 5px solid black;
+
+    }
+    .box{
+      width: 350px;
+      height: 90px;
+      background-color: aquamarine;
+      border: 2px solid black;
+      margin: 5px;
+      border-radius: 20px;
+      position: relative;
+      /* animation-name: rightmove;
+      animation-iteration-count: 1;
+      animation-duration: 5s; */
+      /* animation-delay: 2s; */
+      /* animation-timing-function: linear;*/ /* This is used to make the animation smooth */
+      /* animation-timing-function: steps(5); */ /* This is used to make the animation step by step */
+      /* animation-timing-function: ease-in; */
+      /* animation-timing-function: ease-out; */
+      /* animation-timing-function: ease-in-out; */
+      /* animation-timing-function: cubic-bezier(1,-0.4, 1, 1); */
+      /* animation-direction: alternate; */ /* alternate-reverse; */ 
+      /* animation-fill-mode: forwards;/* /* This is used to keep the last frame of the animation */
+      /* animation-fill-mode: backwards; */ /* This is used to keep the first frame of the animation */
+
+
+      animation: 5s rightmove linear 1s infinite alternate none running; /* This is used to make the animation smooth, This is short hand Notation , means describe in single line */
+
+
+    }
+    h2{
+      text-align: center;
+      padding-top: 20px;
+      font-size: 30px;
+      color: black;
+    }
+    @keyframes rightmove{
+      from{
+        top: 0px;
+        left: 0px;
+      }
+      to{
+        top: 0px;
+        left: 1320px;
+      }
+    }
+
+    #box2{
+      width: 350px;
+      height: 90px;
+      background-color: aquamarine;
+      border: 2px solid black;
+      margin: 5px;
+      border-radius: 20px;
+      position: relative;
+      animation: 5s leftmove ease-in 1s infinite alternate none running; 
+    }
+    @keyframes leftmove{
+      from{
+        top: 530px;
+        left: 1320px;
+      }
+      to{
+        top: 530px;
+        left: 0px;
+      }
+    }
+
+    #circle{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border: 2px solid black;
+      margin: 5px;
+      border-radius: 50%;
+      top: 20%;
+      left: 50%;
+      position: relative;
+      animation: 10s circlemove ease-in-out 0s infinite alternate none running; 
+    }
+    @keyframes circlemove{
+      0%{
+        top: 1%;
+        left: 5%;
+      }
+      30%{
+        top: 5%;
+        left: 90%;
+      }
+      60%{
+        top: 50%;
+        left: 80%;
+      }
+      100%{
+        top: 50%;
+        left: 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="containr">
+    <div class="box">
+      <h2>Animation in CSS</h2>
+    </div>
+
+    <div id="box2">
+      <h2>Animation in CSS</h2>
+  </div>
+
+  <div id="circle">
+    
+  </div>
+</body>
+</html>
