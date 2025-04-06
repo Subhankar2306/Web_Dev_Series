@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition in CSS</title>
+  <style>
+    .box{
+      width: 350px;
+      height: 350px;
+      background-color: aquamarine;
+      border: 2px solid black;
+      margin: 5px;
+      border-radius: 20px;
+      position: relative;
+      /* transition-property: all;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 1s; */
+
+      transition: all 2s ease-in-out 1s;  /* This is used to make the transition smooth, This is short hand Notation , means describe in single line */
+
+      /* transition: width 2s , height 4s; */
+    }
+    .box:hover{
+      width: 500px;
+      height: 500px;
+      background-color: blue;
+      border-radius: 40%;
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+  </div>
+</body>
+</html>
