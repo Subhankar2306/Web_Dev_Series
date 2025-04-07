@@ -1,66 +1,179 @@
-
-*{
+/* Reset and box sizing */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.contaioner{
-  width: 100vw;
-  height: 100vh;
-  overflow-x: none;
+
+/* Overall container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
   background-color: #8EC5FC;
   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
 }
-.navContainer{
-  width: 100vw;
-  /* background-color: aquamarine; */
-  background-color: #0093E9;
+
+/* Navigation bar */
+.navContainer {
+  width: 100%;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-}nav{
+}
+
+nav {
   width: 100%;
 }
-#navList{
-  width: 100%;
-  /* margin-left: 15px;
-  margin-right: 15px; */
-  padding: 15px;
+
+#navList {
   list-style: none;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
 }
-#navLogo{
-  font-size: 2.8rem;
+
+#navLogo {
+  font-size: 2rem;
   font-weight: bold;
   color: rgb(59, 45, 45);
-  text-decoration: none;
 }
-a{
+
+a {
   text-decoration: none;
   color: azure;
 }
-#navItems{
+
+#navItems {
   display: flex;
   gap: 30px;
 }
-.footerBox{
-  width: 100vw;
+
+/* Footer */
+.footerBox {
+  width: 100%;
   height: 40px;
-  background-color: #0093E9;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footerBox p{
+
+.footerBox p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Content Styling */
+.contentBox {
+  width: 90%;
+  max-width: 1000px;
+  margin: 3rem auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 2rem;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+/* Individual item section */
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Left (Text) Section */
+.leftBox {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leftBox h2 {
+  font-size: 2rem;
+  color: #0077cc;
+}
+
+/* Right (Image) Section */
+.rightBox {
+  flex: 1 1 40%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightBox img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.rightBox:hover {
+  transform: scale(1.05);
+}
+
+.rightBox .overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.rightBox:hover .overley {
+  opacity: 1;
+}
+
+.rightBox .overley span {
   color: white;
   font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftBox, .rightBox {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  #navList {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #navItems {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
