@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0093E9;
+      background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    }
+    .card{
+      width: 350px;
+      height: 500px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      gap: 20px;
+    }
+    .card img{
+      width:100%;
+      height: 30%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+    .textBox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      gap: 15px;
+      text-align: center;
+    }
+    .amountBox{
+      width: 80%;
+      height: 10%;
+      background-color: #97b7ca;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 20px;
+      padding-left: 20px;
+
+    }
+    #leftBox{
+      display: flex;
+      align-items: center;
+      /* width: fit-content; */
+      height: 100%;
+      gap: 15px;
+    }
+    .imageBox img{
+      width: 2rem;
+      height: 2rem;
+    }
+    #rightBox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #paymentButton{
+      width: 80%;
+      height: 10%;
+      background-color: #0093E9;
+      border-radius: 9px;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);    
+    }
+    .cancleBox{
+      width: 80%;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cancleBox a{
+      text-decoration: none;
+      color: #2c3033;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="cardicon.jpeg" alt="Icon">
+
+      <div class="textBox">
+        <h2>Order Summary</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, illo. Ut inventore nihil modi, quo quae dolor totam laboriosam corporis.</p>
+      </div>
+
+      <div class="amountBox">
+        <div id="leftBox">
+
+          <div class="imageBox">
+            <img src="CardMusicIcon1.png" alt="Icon2">
+          </div>
+
+          <div id="textBox">
+            <p>Total Amount</p>
+            <p>₹ 500</p>
+
+          </div>
+        </div>
+        <div class="rightBox">
+          <a href="#">Change</a>
+        </div>
+      </div>
+
+      <button id="paymentButton">
+        Proceed to Payment
+      </button>
+
+      <div class="cancleBox">
+        <a href="#">Cancle Order</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
