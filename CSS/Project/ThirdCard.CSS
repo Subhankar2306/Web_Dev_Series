@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+.card{
+  width: 700px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+#leftBox{
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#rightBox{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#rightBox img{
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.thirdBox{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+
+}
+#highlightWord{
+  color: #FFB800;
+  font-weight: bold;
+  font-size: 20px;
+}
