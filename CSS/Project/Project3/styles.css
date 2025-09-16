@@ -574,3 +574,142 @@ body {
     font-size: 2.5rem;
   }
 }
+
+.footer-container{
+  background-color: var(--background-color);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+}
+.footer{
+  max-width: 1280px;
+  padding:1.2rem 2.4rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+.footer-top{
+ width: 34%;
+ display: flex;
+ flex-direction: column;
+ gap: 1.65rem;
+}
+.logo-svg{
+  width: 2rem;
+  height: 6rem;
+}
+.comp-logo{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: -1.9rem;
+}
+.logo-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.28rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.social-icon{
+  height: 1.5rem;
+  width: 1.5rem; 
+}
+.filler-txt{
+  font-size: 1rem;
+  color: var(--gary);
+}
+.social{
+  display: flex;
+  gap: 1.8rem;
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 58%;
+  grid-gap: 5.67rem;
+  padding: 2rem 1rem;
+  padding-top: 2rem;
+}
+.footer-grid-heading{
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+ul{
+  list-style-type:none;
+}
+.footer-link{
+  color: var(--gary);
+  font-size: 0.86rem;
+  transition: color 0.1s;
+}
+.footer-link:hover{
+  color: var(--link-color);
+}
+.footer-link-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+
+.footer-copyright{
+  text-align: center;
+  font-size: 0.86rem;
+  color: var(--gary);
+  padding: 1.5rem 0;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 1.2rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding-right: 0;
+  }
+  .footer-top{
+    width: 100%;
+    align-items: center;
+  }
+  .footer-grid{
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    grid-gap: 3rem;
+    padding: 1rem 0;
+    padding-top: 2rem;
+  }
+  .footer-copyright{
+    font-size: 0.75rem;
+  }
+  .footer-grid-column{
+    align-items: center;
+  }
+  .footer-link-list{
+    align-items: center;
+  }
+  .footer-link{
+    font-size: 0.75rem;
+  }
+  .footer-grid-heading{
+    font-size: 0.95rem;
+  }
+  .logo-svg{
+    height: 4rem;
+    width: 1.2rem;
+  }
+  .logo-link{
+    font-size: 1.1rem;
+  }
+  .filler-txt{
+    font-size: 0.86rem;
+  }
+}
